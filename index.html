@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>PLOTEK – codziennie nowe newsy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #222;
+      margin: 40px;
+    }
+    .site-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .site-title h1 {
+      font-size: 48px;
+      color: #e60000;
+      margin: 0;
+    }
+    .site-title p {
+      font-size: 18px;
+      color: #444;
+      margin-top: 5px;
+    }
+    h2 {
+      color: red;
+      font-size: 32px;
+    }
+    .highlight {
+      color: red;
+      font-weight: bold;
+    }
+    .fake-link {
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .box {
+      border: 2px solid red;
+      padding: 20px;
+      background-color: #ffeeee;
+    }
+    .video-thumb {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+    .video-thumb img {
+      width: 100%;
+      border: 4px solid #000;
+    }
+    .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 60px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="site-title">
+    <h1>PLOTEK</h1>
+    <p>codziennie nowe newsy</p>
+  </div>
+  <h2>UWAGA! Wielka wpadka baleriny!</h2>
+  <div class="box">
+    <p>To nie żart! Internet aż huczy po tym, co wydarzyło się wczoraj wieczorem. Niespodziewanie, <span class="highlight">ruda balerina</span> – znana ze swojego perfekcyjnego stylu i nieskazitelnego wizerunku – zaliczyła ogromną wpadkę, która wstrząsnęła jej fanami!</p>
+    <p>Jak donoszą nasze źródła, do sieci <strong>wyciekło coś, czego nikt się nie spodziewał</strong>. Tajemnicze nagranie, które obiegło media społecznościowe z prędkością światła, pokazuje balerinę w... delikatnie mówiąc, niecodziennej sytuacji. Internauci nie mogą uwierzyć w to, co zobaczyli.</p>
+    <p>Eksperci twierdzą, że ta sytuacja może mieć <em>poważne konsekwencje dla jej kariery</em>, a sama zainteresowana odmówiła komentarza. Czy to koniec jej nieskazitelnej reputacji? Czy będzie musiała tłumaczyć się publicznie? Na razie możemy tylko spekulować.</p>
+    <div class="video-thumb" onclick="showTrollMessage()">
+      <img src="https://via.placeholder.com/600x350.png?text=Kliknij+aby+obejrze%C4%87" alt="Miniaturka wideo">
+      <div class="play-button">&#9658;</div>
+    </div>
+    <p class="fake-link" onclick="showTrollMessage()">UWAGA! <span style="text-decoration: underline;">WIDEO!</span></p>
+  </div>
+  <script>
+    function showTrollMessage() {
+      alert("DAŁEŚ SIĘ NABRAĆ, ŚMIESZKU!");
+    }
+  </script>
+</body>
+</html>
